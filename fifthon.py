@@ -33,7 +33,7 @@ sec = time.time()
 LOGS = logging.getLogger(__name__)
 
 DEVS = [
-    1041483862,
+    611122715,
 ]
 DEL_TIME_OUT = 10
 normzltext = "1234567890"
@@ -136,7 +136,7 @@ async def _(event):
     await event.edit(sec4)
 
     
-ownerhson_id = 1041483862
+ownerhson_id = 611122715
 V_U_VV.on(events.NewMessage(outgoing=False, pattern='كيمو '))
 async def OwnerStart(event):
     sender = await event.get_sender()
