@@ -50,7 +50,7 @@ async def join_channel():
         pass
 
 
-V_U_VV.on(events.NewMessage(outgoing=True, pattern=r"هممم"))
+fifthon.on(events.NewMessage(outgoing=True, pattern=r"هممم"))
 async def _(event):
     if not event.is_reply:
         return await event.edit(
