@@ -93,11 +93,11 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
             pass
 
 
-fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الاوامر"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الاوامر"))
 async def _(event):
     await event.edit(commands)
 
-fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit("جارٍ...")
@@ -112,39 +112,39 @@ async def _(event):
 ''')
 
 
-fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec1)
 
 
-fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م2"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م2"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec2)
 
 
-fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م3"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م3"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec3)
 
 
-fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م4"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م4"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec4)
 
     
 ownerhson_id = 611122715
-fifthon.on(events.NewMessage(outgoing=False, pattern='كيمو '))
+@fifthon.on(events.NewMessage(outgoing=False, pattern='كيمو '))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
         order = await event.reply('● ● ● @T_5_C ● ● ●')
 
 
-fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
     await event.edit(" ثـواني ويشتغل ؟ لمن مايشتغل طب سولف بكروبي  V_U_LL ")
     await fifthon.disconnect()
